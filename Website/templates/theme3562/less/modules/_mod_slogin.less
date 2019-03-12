@@ -1,0 +1,128 @@
+//============================================================
+// Slogin Modules
+//============================================================
+
+.jlslogin{
+  #login-form{
+    margin-bottom: 0;
+    .userdata{
+
+      #form-login-username,
+      #form-login-password{
+        label{
+          & + *{
+            margin-top: 10px;
+          }
+        }
+
+        .inputbox{
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          margin-bottom: 16px;
+          padding: 0 14px;
+          width: 100%;
+          &:focus{
+
+          }
+        }
+      }
+
+      #form-login-username{
+
+      }
+
+      #form-login-password{
+
+      }
+
+      #form-login-remember{
+        label {
+          font-weight: normal;
+
+          .checkbox{
+            margin-top: 7px;
+            .checkbox_inner{
+
+            }
+          }
+        }
+      }
+
+      .btn{
+        
+      }
+    }
+
+    .ul-jlslogin{
+      margin-bottom: 20px;
+      li{
+        a{
+          &:hover{
+
+          }
+        }
+      }
+    }
+  }
+
+  #slogin-buttons{
+    .btn{
+      margin-bottom: 10px;
+      &:hover{
+
+      }
+
+      &.linkfacebookslogin{
+
+      }
+
+      &.linkgoogleslogin{
+
+      }
+    }
+  }  
+}
+
+
+
+// ===========================
+// Megamenu Login
+// ===========================
+
+.t3-megamenu{
+  .login_megamenu{
+  
+    .jlslogin{
+      #login-form{
+        margin-bottom: 15px;
+
+        .userdata{
+          margin-bottom: 10px;
+
+          #form-login-remember{
+            span{
+              border: 1px solid @check-border;
+            }
+          }
+        }
+      }
+
+      label + *{
+        margin: 0;
+      }
+
+      a.btn{
+        padding: 10px 15px !important;
+        background: @global-color !important;
+        color: white !important;
+        display: inline-block !important;
+        margin-right: 10px !important;
+        margin-bottom: 15px !important;
+        &:hover{
+          background: @headings-color !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>TM Counters</name>
+	<author>TemplateMonster http://www.templatemonster.com</author>
+	<creationDate>December, 2017</creationDate>
+	<copyright>Copyright (c) 2012-2017 by TemplateMonster - www.templatemonster.com</copyright>
+	<license>Licensed under the GNU/GPLv2:  http://www.opensource.org/licenses/mit-license.php</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.templatemonster.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Thanks for installing TM Counters</description> 
+	<files>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<filename module="mod_tm_counters">mod_tm_counters.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_tm_counters.xml</filename>
+	</files>
+	<config>
+		<fields name="params" >
+			<fieldset name="basic">
+
+				<field
+					type="textarea"
+					name="pretext"
+					rows="5"
+					cols="5"
+					label="Pretext"
+					description="">
+				</field>
+
+				<field
+					name="columns"
+					type="list"
+					default="1"
+					label="Columns"
+					description="Number of columns">
+					<option	value="1">1</option>
+					<option	value="2">2</option>
+					<option	value="3">3</option>
+					<option	value="4">4</option>
+					<option	value="5">5</option>
+					<option	value="6">6</option>
+				</field>
+
+				<field
+					name="animation_speed"
+					type="text"
+					default="6000"
+					label="Animation speed"
+					description="" />
+
+				<field name="items_data"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Items values"
+					default='{"item_name":["Name"],"item_value":["30"]}'
+					>
+					<fields name="params">
+						<fieldset hidden="true" name="items_data_fields" repeat="true">
+							<field 
+								name="item_name" 
+								type="text" 
+								label="Item title"
+							/>
+							<field 
+								name="item_value" 
+								type="text" 
+								label="Item value"
+								description="Example: 30"
+							/>
+						</fieldset>
+					</fields>
+				</field>
+				
+			</fieldset>
+			<fieldset name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="Module Suffix"
+					description="Module Suffix" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

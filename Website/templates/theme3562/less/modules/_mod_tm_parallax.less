@@ -1,0 +1,42 @@
+// ============================
+// Parallax Modules
+// ============================
+
+.parallax-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.mod_tm_parallax{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-position: center center;
+
+	img {
+	    display: none;
+	    position: absolute;
+	    left: 50%;
+	    bottom: 0;
+	    min-width: 100%;
+	    min-height: 100%;
+	    max-width: none;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	    -webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    .transition(0s);
+	}
+}
+
+body.mobile .mod_tm_parallax {
+  position: absolute;
+}
+
+.mod_tm_parallax__{
+	
+}

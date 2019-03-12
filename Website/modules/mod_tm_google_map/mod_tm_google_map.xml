@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>TM Google map</name>
+	<author>TemplateMonster http://www.templatemonster.com</author>
+	<creationDate>December, 2017</creationDate>
+	<copyright>Copyright (c) 2012-2017 by TemplateMonster - www.templatemonster.com</copyright>
+	<license>Licensed under the GNU/GPLv2:  http://www.opensource.org/licenses/mit-license.php</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.templatemonster.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Thanks for installing TM Google map</description> 
+	<files>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<filename module="mod_tm_google_map">mod_tm_google_map.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_tm_google_map.xml</filename>
+	</files>
+	<config>
+		<fields name="params" >
+			<fieldset name="basic" addfieldpath="/modules/mod_tm_google_map/fields">
+
+				<field
+					type="textarea"
+					name="pretext"
+					rows="5"
+					cols="5"
+					label="Pretext"
+					description="">
+				</field>
+
+				<field
+					name="api_key"
+					type="text"
+					default="AIzaSyAwH60q5rWrS8bXwpkZwZwhw9Bw0pqKTZM"
+					label="Google map api key"
+					description="" />
+
+				<field
+					name="map_height"
+					type="text"
+					default="400px"
+					label="Map height"
+					description="Map height (px)" />
+
+				<field
+					name="map_zoom_level"
+					type="text"
+					default="15"
+					label="Map zoom level"
+					description="Map zoom level" />	
+				
+				<field 
+					name="marker-base" 
+					type="media" 
+					label="Marker image"
+				/>
+
+				<field 
+					name="marker-active" 
+					type="media" 
+					label="Marker hover image"
+				/>
+
+				<field name="items_data"
+					type="repeatable"
+					icon="list"
+					description=""
+					id="false"
+					label="Locations"
+					default='{"item_x":["-73.9874068"],"item_y":["40.643180"],"item_label":["2130 Fulton Street San Diego, CA 94117-1080 USA"]}'
+					>
+					<fields name="params">
+						<fieldset hidden="true" name="items_data_fields" repeat="true">
+							<field 
+								name="item_x" 
+								type="text" 
+								label="Longitude"
+								description="Example: -73.9874068"
+							/>
+							<field 
+								name="item_y" 
+								type="text" 
+								label="Latitude"
+								description="Example: 40.643180"
+							/>
+
+							<field 
+								name="item_label" 
+								type="textarea" 
+								label="Label description"
+							/>
+
+							<field 
+								name="item_image" 
+								type="mediaold"
+								preview="false"
+								label="Label image"
+							/>
+						</fieldset>
+					</fields>
+				</field>
+
+				<field 
+					name="map_styles" 
+					type="textarea" 
+					label="Map style"
+				/>
+				
+			</fieldset>
+			<fieldset name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="Module Suffix"
+					description="Module Suffix" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

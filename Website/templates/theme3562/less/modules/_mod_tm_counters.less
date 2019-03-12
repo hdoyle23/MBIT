@@ -1,0 +1,73 @@
+// =======================
+// Counters Modules
+// =======================
+
+.mod_tm_counters{
+
+  .counter_item{
+    margin-bottom: @line-height-base*2;
+    .counter-wrapper{
+      position: relative;
+
+      .counter-wrapper-box{
+        .counter-wrapper-box_content{
+          text-align: center;
+          .counter-value{
+            font-size: 46px;
+            line-height: 60px;
+            margin: 0 0 20px;
+            border: none;
+            color: @global-color;
+            background: transparent;
+          }
+
+          .counter-title{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: @global-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mod_tm_counters__{
+
+  &circle{
+    .counter_item{
+      text-align: center;
+      .counter-wrapper{
+        display: block;
+        position: relative;
+        max-width: 270px;
+        margin: 0 auto;
+        .border-radius(50%);
+        border: 5px solid #eaeaea;
+
+        .counter-wrapper-box{
+          width: 100%;
+          padding-top: 100%; 
+
+          .counter-wrapper-box_content{
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            right: 15px;
+            .translate(0,-50%);
+
+            .counter-value{
+              
+            }
+
+            .counter-title{
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

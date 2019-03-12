@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>TM Progress bars</name>
+	<author>TemplateMonster http://www.templatemonster.com</author>
+	<creationDate>June, 2017</creationDate>
+	<copyright>Copyright (c) 2012-2017 by TemplateMonster - www.templatemonster.com</copyright>
+	<license>Licensed under the GNU/GPLv2:  http://www.opensource.org/licenses/mit-license.php</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.templatemonster.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Thanks for installing TM Progress bars</description> 
+	<files>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<filename module="mod_tm_progress_bars">mod_tm_progress_bars.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_tm_progress_bars.xml</filename>
+	</files>
+	<config>
+		<fields name="params" >
+			<fieldset name="basic" addfieldpath="modules/mod_tm_progress_bars/fields">
+
+				<field
+					type="textarea"
+					name="pretext"
+					rows="5"
+					cols="5"
+					label="Pretext"
+					description="">
+				</field>
+
+				<field
+					name="choose_type"
+					type="list"
+					default="0"
+					label="Progress bar type"
+					description="">
+					<option	value="0">Horizontal progress bars</option>
+					<option	value="1">Radial gradient progress bars</option>
+					
+				</field>
+
+				<field
+					type="text"
+					name="thickness"
+					default="60"
+					label="Thickness"
+					description="Width of the arc. Example: 60"
+					showon="choose_type:1"
+					>
+				</field>
+
+				<field
+					name="columns"
+					type="list"
+					default="1"
+					label="Columns"
+					description="Number of columns">
+					<option	value="1">1</option>
+					<option	value="2">2</option>
+					<option	value="3">3</option>
+					<option	value="4">4</option>
+					<option	value="6">6</option>
+				</field>
+
+				<field name="items_data2"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Items values"
+					default='{"item_name":["Name"],"item_value":["30"],"item_color1":["#eaeaea"],"item_color2":["#eaeaea"],"item_color3":["#f5f5f5"]}'
+					showon="choose_type:1"
+					>
+					<fields name="params">
+						<fieldset hidden="true" name="items_data2_fields" repeat="true">
+							<field 
+								name="item_name" 
+								type="text" 
+								label="Item title"
+							/>
+							<field 
+								name="item_value" 
+								type="text" 
+								label="Item value"
+								description="Example: 30"
+							/>
+
+							<field 
+								name="item_color1" 
+								type="color" 
+								label="Item color first"
+							/>
+
+							<field 
+								name="item_color2" 
+								type="color" 
+								label="Item color last"
+							/>
+
+							<field 
+								name="item_color3" 
+								type="color" 
+								label="Empty fill color"
+								default="#f5f5f5"
+							/>
+						</fieldset>
+					</fields>
+				</field>
+
+				<field name="items_data"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Items values"
+					default='{"item_name":["Name"],"item_value":["30"],"item_color":["#eaeaea"]}'
+					showon="choose_type:0"
+					>
+					<fields name="params">
+						<fieldset hidden="true" name="items_data_fields" repeat="true">
+							<field 
+								name="item_name" 
+								type="text" 
+								label="Item title"
+							/>
+							<field 
+								name="item_value" 
+								type="text" 
+								label="Item value"
+								description="Example: 30"
+							/>
+
+							<field 
+								name="item_color" 
+								type="color" 
+								label="Item color"
+							/>
+						</fieldset>
+					</fields>
+				</field>
+
+				
+			</fieldset>
+			<fieldset name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="Module Suffix"
+					description="Module Suffix" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

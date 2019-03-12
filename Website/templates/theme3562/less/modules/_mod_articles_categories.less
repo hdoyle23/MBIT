@@ -1,0 +1,59 @@
+// ============================
+// Articles Categories Modules
+// ============================
+
+.categories-module{
+
+  	ul.categories-module{
+  		margin-bottom: @line-height-base;
+
+  		li {
+		    list-style: none;
+		  }
+  	}
+
+    &.blog_categories{
+	    li {
+	      border: none;
+	      position: relative;
+	      padding: 0;
+	      padding-left: 39px;
+	      &:before {
+	        position: absolute;
+	        left: -2px;
+	        top: 50%;
+	        margin-top: 2px;
+	        .translate(0px, -50%);
+	        content: '\f058';
+	        font-family: @fa;
+	        font-size: 24px;
+	        color: @global-color;
+	      }
+
+	      & + li {
+	        margin-top: 19px;
+	      }
+
+	      a{
+	        color: @text-color;
+	        
+	        &:hover{
+	          color: @global-color;
+	        }
+	      }
+
+	    }
+	    &.nav-tabs {
+	      li {
+	        padding: 0;
+	        &:before {
+	          display: none;
+	        }
+	      }
+	    }
+
+	    span {
+	      text-decoration: none;
+	    }
+	}
+}

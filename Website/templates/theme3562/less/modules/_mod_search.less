@@ -1,0 +1,57 @@
+// ============================
+// Search Modules
+// ============================
+.modal.search {
+	.modal-content {
+		background: none;
+		.box-shadow(none);
+		border: none;
+	}
+}
+.search{
+
+    &.modal_search{
+	    padding: 15px;
+	    .form-search{
+	        padding: 0;
+	        margin: 0;
+	        position: relative;
+
+	        .btn{
+		        position: absolute;
+		        top: 0;
+		        right: 0;
+		        bottom: 0;
+		        width: 50px;
+		        padding: 0;
+		        margin: 0;
+		        height: @input-height;
+		        .border-radius(0 8px 8px 0);
+
+		        &:before{
+		        	content: "\f002";
+		        	font-size: 14px;
+		        	line-height: 50px;
+		        	display: inline-block;
+		        	font-family: @fa;
+		        }
+		    }
+
+	      #mod-search-searchword{
+	        width: 100%;
+	        padding-right: 50px;
+	        margin: 0;
+	        background: none;
+	        .border-radius(8px);
+	        color: #fff;
+	        .placeholder(#fff)!important;
+	      }
+	    }
+
+	    @media(max-width: 767px){
+	        .navbar-form{
+	        	margin: 0;
+	        }
+	    }
+    }
+}

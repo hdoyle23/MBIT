@@ -1,0 +1,297 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+
+// --------------------------------------------------
+// CORE ELEMENTS
+// --------------------------------------------------
+
+//
+// SCAFFOLDING (scaffolding.less)
+// --------------------------------------------------
+body {
+  color: @text-color;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  font-weight: @font-weight-base;
+  background: @body-bg;
+
+  & when (unit(@font-letter-spacing-base) = 0) {
+    letter-spacing: normal;
+  }
+
+  & when (unit(@font-letter-spacing-base) > 0) {
+    letter-spacing: @font-letter-spacing-base-custom;
+  }
+
+  font-style: @font-style-base;
+}
+
+.custom_hover strong { display: none; }
+
+html {
+  -ms-overflow-style: scrollbar;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  -ms-overflow-style: scrollbar;
+  height: 100%;
+  margin: 0;
+  &:after{
+    content: "";
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -999;
+  }
+
+  &.disable-hover {
+    &:after {
+      z-index: 999999999999999999;
+    }
+  }
+}
+
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+// --------------------------------------------------
+a {
+  color: @link-color;
+  text-decoration: none;
+  .transition(.3s);
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    outline: none !important;
+    text-decoration: none;
+  }
+
+  span{
+    color: inherit;
+    background: inherit;
+
+    &:hover{
+      color: inherit;
+      background: inherit;
+    }
+  }
+
+  &:focus {
+    .tab-focus();
+    text-decoration: none;
+    background: transparent;
+  }
+}
+
+// Images
+// --------------------------------------------------
+img {
+  vertical-align: middle;
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+}
+
+// Rounded corners
+.img-rounded {
+}
+
+// Image thumbnails
+.img-thumbnail {
+}
+
+// Perfect circle
+.img-circle {
+}
+
+
+
+//
+// TABLES (tables.less)
+// -------------------------------------------------------
+table {
+
+}
+
+// All Cells
+// ---------
+th,
+td {
+  line-height: @line-height-base;
+  text-align: left;
+  vertical-align: top;
+} 
+
+// Heading
+// -------
+th {
+  font-weight: bold;
+  // Links in Table Heading
+  a {
+    // Link states
+    &:hover, &:focus, &:active {
+    }
+  }
+}
+
+// Base Cells
+// ----------
+td,
+tr td {
+  border-top: 1px solid @table-border-color;
+}
+
+
+
+// Specific Joomla! Table Styles
+// -----------------------------
+.cat-list-row0,
+.cat-list-row1,
+tr.cat-list-row0 td,
+tr.cat-list-row1 td {
+}
+
+.cat-list-row0:hover,
+.cat-list-row1:hover {
+  background: @table-bg-hover;
+}
+
+.cat-list-row1,
+tr.cat-list-row1 td {
+  background: @table-bg-accent;
+}
+
+table.contentpane,
+table.tablelist,
+table.category,
+table.admintable,
+table.blog {
+  width: 100%;
+}
+
+table.contentpaneopen {
+  border: 0;
+}
+
+
+
+// 
+// MISC
+// --------------------------------------------------
+.star {
+  color: @yellow;
+}
+
+.red {
+  color: @red;
+}
+
+// Horizontal rules
+hr {
+  margin-top:    @line-height-computed;
+  margin-bottom: @line-height-computed;
+  border: 0;
+  border-top: 1px solid @hr-border;
+}
+
+// Wrap Element
+.wrap {
+  width: auto;
+  clear: both;
+}
+
+// Center
+.center,
+.table td.center,
+.table th.center {
+  text-align: center;
+}
+
+// Hidden elements
+.element-invisible {
+ position: absolute;
+ padding: 0;
+ margin: 0;
+ border: 0;
+ height: 1px;
+ width: 1px;
+ overflow: hidden;
+}
+
+.item-pageworks{
+  .pull-left{
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+
+.btn-group > .btn, .btn-group-vertical > .btn{
+  z-index: 1;
+}
+
+@media(max-width: 767px){
+  .item__module{
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-height: 639px) {
+  
+  .modal-dialog {
+    bottom: 0;
+    top: 0;
+    transform: translate(-50%, 0%);
+  }
+}

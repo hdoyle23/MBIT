@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+		<fieldset name="item_settings" addfieldpath="/modules/mod_swiper/fields">
+			<field
+				name="article_number"
+				type="text"
+				required="true"
+				label="MOD_SWIPER_ARTICLE_NUMBER"
+				description="MOD_SWIPER_ARTICLE_NUMBER_DESC"/>
+
+			<field name="slide_effect"
+				type="list"
+				default="1"
+				label="MOD_SWIPER_SLIDE_EFFECT"
+				description="MOD_SWIPER_SLIDE_EFFECT_DESC">
+						<option value="1">Parallax</option>
+						<option value="0">Background Video</option>
+			</field>
+
+			<field type="spacer" label="MOD_SWIPER_VIDEO_SLIDE_EFFECT_SETTINGS" description=""/>
+			<field
+				name="background_video_effect"
+				type="Videos"
+				directory="media/swiper-videos"
+				label="MOD_SWIPER_BACKGROUND_VIDEO_EFFECT"
+				description="MOD_SWIPER_BACKGROUND_VIDEO_EFFECT_DESC" />
+
+			<field type="spacer" label="MOD_SWIPER_PARALLAX_SLIDE_EFFECT_SETTINGS" description=""/>
+			<field
+				name="parallax_effect"
+				type="media"
+				label="MOD_SWIPER_PARALLAX_EFFECT"/>
+
+			<field
+				name="parallax_effect_speed"
+				type="text"
+				default="1"
+				label="MOD_SWIPER_PARALLAX_EFFECT_SPEED"
+				description="MOD_SWIPER_PARALLAX_EFFECT_SPEED_DESC"/>
+			<field
+				name="parallax_effect_direction"
+				type="list"
+				default="1"
+				label="MOD_SWIPER_PARALLAX_EFFECT_DIRECTION"
+				description="MOD_SWIPER_PARALLAX_EFFECT_DIRECTION_DESC">
+					<option value="1">normal</option>
+					<option value="0">Inverse</option>
+			</field>
+			<field type="spacer" label="---------------------------------------------------------------------------------------------------------" description=""/>
+		</fieldset>
+</form>

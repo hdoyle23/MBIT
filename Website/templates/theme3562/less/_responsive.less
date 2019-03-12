@@ -1,0 +1,256 @@
+/*== 1200px and beyond ===================================================
+========================================================================*/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+
+@media screen and (max-height: 639px) {
+  .modal-dialog {
+    bottom: 0;
+    top: 0;
+    transform: translate(-50%, 0%);
+  }
+}
+
+/*== Up to 1200px =====================================================
+========================================================================*/
+
+/* Large desktop */
+@media (max-width: 1200px) {
+
+      .js-calendar .calendar-container .btn-group {
+        display: block;
+        width: 100%;
+        .btn {
+            max-width: 33.3%;
+            width: 100%;
+            text-align: center;
+            padding-right: 0;
+            padding-left: 0;
+            display: inline-block;
+            margin: 0;
+        }
+    }
+}
+
+/*== Up to 980px ======================================================
+========================================================================*/
+
+/* Narrow desktop */
+@media (max-width: 979px) {
+
+  .thumbnails {
+    margin-left: -12px;
+  }
+
+  .thumbnails > li {
+    margin-left: 12px;
+  }
+
+  #back-top {
+    display: none !important;
+    .opacity(0) !important;
+  }
+
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    font-weight: inherit;
+  }
+}
+
+/*== Up to 980px and beyond 768px ======================================
+========================================================================*/
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+
+/*== Up to 767px ======================================================
+========================================================================*/
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+
+      .page-registration form label, .page-remind form label, .page-reset form label, .page-login form label, .page-login form label, .page-profile__edit form label {
+    text-align: left;
+}
+
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+
+      .js-calendar .calendar-container .btn-group {
+        display: block;
+        width: 100%;
+        .btn {
+            max-width: 33.3%;
+            width: 100%;
+            text-align: center;
+            padding-right: 0;
+            padding-left: 0;
+            display: inline-block;
+            margin: 0;
+        }
+    }
+
+    #jform_profile_tos{
+    width: 100%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  #logo {
+    text-align: center;
+    a {
+      margin: 0;
+    }
+  }
+
+  /*===== Tables =====*/
+  .item_introtext {
+    dl.table { display: none; }
+    table {
+      display: block;
+    }
+  }
+
+}
+
+/*== Up to 640px ==================================================
+====================================================================*/
+
+@media (max-width: 639px) {
+
+
+  .form-horizontal .control-label {
+    float: none;
+    width: 100%;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.form-horizontal .controls {
+    margin-left: 0px;
+}
+  ul#order {
+    float: none;
+  }
+}
+
+// Set Elements on 2 columns
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/*== Up to 480px ==================================================
+====================================================================*/
+/* Landscape phones and down */
+@media (max-width: 479px) {
+
+  .modal-dialog {
+    left: 0;
+    transform: translate(0%, 0%);
+  }
+
+  // Alert Resize
+  .alert {
+    padding: 28px 58px 28px 70px;
+    &:before {
+      left: 10px;
+      font-size: 40px;
+    }
+  }
+
+  /*blog*/
+  .item_img {
+    float: none;
+    margin: 0 0 @line-height-base 0;
+    max-width: 100%;
+  }
+
+  .portfolio-thumbs {
+    float: none;
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+    ul {
+      margin-right: 0;
+      overflow: hidden;
+      li {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .data-table dl {
+    float: none;
+    width: 100%;
+    & + dl {
+      border-left: 1px solid @table-border-color;;
+      border-top: none;
+    }
+  }
+
+  /*search*/
+  .mod-search__aside {
+    .mod-search_searchword {
+      width: 100%;
+    }
+  }
+
+  /*login*/
+  .mod-login__aside {
+    .mod-login_username,
+    .mod-login_passwd,
+    .mod-login_userdata {
+      width: 100%;
+    }
+    .mod-login_userdata {
+      overflow: hidden;
+    }
+  }
+
+  div.modal {
+    position: absolute;
+  }
+
+  #error {
+    input {
+      width: 200px;
+    }
+  }
+
+  .jg_photo {
+    width: 100%;
+  }
+
+  /*===== Tables =====*/
+  .item_introtext,
+  .item_fulltext {
+    table {
+      tr {
+        td {
+          &:before {
+            font-size: @font-size-large;
+            padding: 10px;
+          }
+          & + td {
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+
+  .chzn-container {
+    width: 100% !important;
+    min-width: 200px;
+  }
+}
+

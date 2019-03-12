@@ -1,0 +1,146 @@
+// ============================
+// Ajax contact form Modules
+// ============================
+
+.mod_tm_ajax_contact_form{
+
+  	margin-bottom: @line-height-base;
+
+	.mod_tm_ajax_contact_form_message{
+
+	}
+
+    .mod_tm_ajax_contact_form_select{
+	   	margin-bottom: @input-margin-bottom;
+	  	font-size: 0;
+	}
+
+	.control-group-input{
+		position: relative;
+
+		&.reset-margin,
+		&:last-child,
+		select,
+		textarea,
+		input[type="text"],
+		input[type="password"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="date"],
+		input[type="dates"]
+		input[type="month"],
+		input[type="time"],
+		input[type="times"],
+		input[type="week"],
+		input[type="number"],
+		input[type="email"],
+		input[type="url"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="color"],
+		.uneditable-input {
+		    width: 100%;
+		}
+		&.reset-margin {
+		    margin-bottom: 0;
+		}
+	}
+
+	.control-group-captcha{
+	    margin-bottom: 20px;
+	}
+
+    table{
+    border: none;
+    tr{
+      border: none;
+      td{
+        border: none;
+      }
+    }
+  }
+
+  .timepicker{
+    .btn{
+      padding: 3px;
+      margin: 0;
+      background: #eee;
+      color: #777;
+      border-radius: 0;
+
+      &:before{
+        display: none;
+      }
+
+      &:hover{
+        background: darken(#eee, 15%);
+        color: #777;
+        border-radius: 0;
+      }
+
+      span{
+        margin: 0;
+        padding: 0;
+        background: transparent;
+      }
+    }
+
+    .timepicker-hour,
+    .timepicker-minute{
+      color: #777;
+    }
+  }
+
+  .datepicker{
+    .datepicker-days,
+    .datepicker-months{
+
+      tr{
+        th{
+          background: #777;
+          color: #eee;
+          .border-radius(0);
+          &.prev,
+          &.picker-switch,
+          &.next{
+            .transition(.3s);
+            &:hover{
+              background: darken(#777, 15%);
+              color: #eee;
+            }
+          }
+        }
+      }
+    }
+
+    tbody{
+      tr{
+        td.day{
+          background: #777;
+          color: #eee;
+          &:hover{
+            background: darken(#777, 15%);
+            color: #eee;
+          }
+        }
+
+        td{
+          background: #777;
+          color: #eee;
+          .border-radius(0);
+          .transition(.3s);
+          span{
+            &:hover{
+              background: darken(#777, 15%);
+              color: #eee;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mod_tm_ajax_contact_form__{
+	
+}

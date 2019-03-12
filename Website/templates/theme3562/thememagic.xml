@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+	<fields name="thememagic" addfieldpath="/plugins/system/t3/includes/depend">
+
+		<fieldset name="typo_params" label="Base text/link settings">
+			
+			<field
+				name="body-bg"
+				type="color"
+				class="t3tm-color"
+				label="Body background color"
+				description=""
+			/>
+
+			<field
+				name="font-size-base"
+				type="text" size="15" class="input-tiny t3tm-dimension" 
+				label="Base font-size"
+				description=""
+			/>
+
+			<field
+				name="line-height-base"
+				type="text"
+				size="15"
+				class="input-tiny"
+				label="Base line-height"
+				description=""
+			/>
+
+			<field
+				name="text-color"
+				type="color"
+				class="t3tm-color"
+				label="Base text color"
+				description=""
+			/>
+
+			<field
+				name="headings-color"
+				type="color"
+				class="t3tm-color"
+				label="Base headings color"
+				description=""
+			/>
+
+			<field
+				name="link-color"
+				type="color"
+				class="t3tm-color"
+				label="Base link color"
+				description=""
+			/>
+
+			<field
+				name="link-hover-color"
+				type="color"
+				class="t3tm-color"
+				label="Base link hover color"
+				description=""
+			/>
+
+			<field name="font-weight-base" type="list" label="Base font weight" description="">
+				<option value="100">100</option>
+				<option value="200">200</option>
+				<option value="300">300</option>
+				<option value="400">400</option>
+				<option value="500">500</option>
+				<option value="600">600</option>
+				<option value="700">700</option>
+				<option value="800">800</option>
+				<option value="900">900</option>
+			</field>
+
+			<field
+				name="font-style-base"
+				type="list"
+				label="Base font-style"
+				description="">
+				<option value="normal">normal</option>
+				<option value="italic">italic</option>
+				<option value="oblique">oblique</option>
+				<option value="inherit">inherit</option>
+			</field>
+		</fieldset>
+
+
+		<fieldset name="h1_params" label="H1 Heading settings">
+
+			<field
+				name="font-size-h1"
+				type="text"
+				size="15"
+				class="input-tiny t3tm-dimension" 
+				label="H1 Heading font-size"
+				description=""
+			/>
+
+			<field
+				name="font-lh-h1"
+				type="text"
+				size="15"
+				class="input-tiny" 
+				label="H1 Heading line-height"
+				description=""
+			/>
+
+			<field name="font-weight-h1" type="list" label="H1 Heading font-weight" description="">
+				<option value="100">100</option>
+				<option value="200">200</option>
+				<option value="300">300</option>
+				<option value="400">400</option>
+				<option value="500">500</option>
+				<option value="600">600</option>
+				<option value="700">700</option>
+				<option value="800">800</option>
+				<option value="900">900</option>
+			</field>
+
+			<field
+				name="font-color-h1"
+				type="color"
+				class="t3tm-color"
+				label="H1 Heading color"
+				description=""
+			/>
+
+			<field
+				name="font-style-h1"
+				type="list"
+				label="H1 Heading font-style"
+				description="">
+				<option value="normal">normal</option>
+				<option value="italic">italic</option>
+				<option value="oblique">oblique</option>
+				<option value="inherit">inherit</option>
+			</field>
+
+			<field
+				name="font-text-align-h1"
+				type="list"
+				label="H1 Heading font text-align"
+				description="">
+				<option value="center">center</option>
+				<option value="justify">justify</option>
+				<option value="left">left</option>
+				<option value="right">right</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="h2_params" label="H2 Heading settings">
+
+			<field
+				name="font-size-h2"
+				type="text"
+				size="15"
+				class="input-tiny t3tm-dimension" 
+				label="H2 Heading font-size"
+				description=""
+			/>
+
+			<field
+				name="font-lh-h2"
+				type="text"
+				size="15"
+				class="input-tiny" 
+				label="H2 Heading line-height"
+				description=""
+			/>
+
+			<field name="font-weight-h2" type="list" label="H2 Heading font-weight" description="">
+				<option value="100">100</option>
+				<option value="200">200</option>
+				<option value="300">300</option>
+				<option value="400">400</option>
+				<option value="500">500</option>
+				<option value="600">600</option>
+				<option value="700">700</option>
+				<option value="800">800</option>
+				<option value="900">900</option>
+			</field>
+
+			<field
+				name="font-color-h2"
+				type="color"
+				class="t3tm-color"
+				label="H2 Heading color"
+				description=""
+			/>
+
+			<field
+				name="font-style-h2"
+				type="list"
+				label="H2 Heading font-style"
+				description="">
+				<option value="normal">normal</option>
+				<option value="italic">italic</option>
+				<option value="oblique">oblique</option>
+				<option value="inherit">inherit</option>
+			</field>
+
+			<field
+				name="font-text-align-h2"
+				type="list"
+				label="H2 Heading font text-align"
+				description="">
+				<option value="center">center</option>
+				<option value="justify">justify</option>
+				<option value="left">left</option>
+				<option value="right">right</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="h3_params" label="H3 Heading settings">
+
+			<field
+				name="font-size-h3"
+				type="text"
+				size="15"
+				class="input-tiny t3tm-dimension" 
+				label="H3 Heading font-size"
+				description=""
+			/>
+
+			<field
+				name="font-lh-h3"
+				type="text"
+				size="15"
+				class="input-tiny" 
+				label="H3 Heading line-height"
+				description=""
+			/>
+
+			<field name="font-weight-h3" type="list" label="H3 Heading font-weight" description="">
+				<option value="100">100</option>
+				<option value="200">200</option>
+				<option value="300">300</option>
+				<option value="400">400</option>
+				<option value="500">500</option>
+				<option value="600">600</option>
+				<option value="700">700</option>
+				<option value="800">800</option>
+				<option value="900">900</option>
+			</field>
+
+			<field
+				name="font-color-h3"
+				type="color"
+				class="t3tm-color"
+				label="H3 Heading color"
+				description=""
+			/>
+
+			<field
+				name="font-style-h3"
+				type="list"
+				label="H3 Heading font-style"
+				description="">
+				<option value="normal">normal</option>
+				<option value="italic">italic</option>
+				<option value="oblique">oblique</option>
+				<option value="inherit">inherit</option>
+			</field>
+
+			<field
+				name="font-text-align-h3"
+				type="list"
+				label="H3 Heading font text-align"
+				description="">
+				<option value="center">center</option>
+				<option value="justify">justify</option>
+				<option value="left">left</option>
+				<option value="right">right</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="h4_params" label="H4 Heading settings">
+
+			<field
+				name="font-size-h4"
+				type="text"
+				size="15"
+				class="input-tiny t3tm-dimension" 
+				label="H4 Heading font-size"
+				description=""
+			/>
+
+			<field
+				name="font-lh-h4"
+				type="text"
+				size="15"
+				class="input-tiny" 
+				label="H4 Heading line-height"
+				description=""
+			/>
+
+			<field name="font-weight-h4" type="list" label="H4 Heading font-weight" description="">
+				<option value="100">100</option>
+				<option value="200">200</option>
+				<option value="300">300</option>
+				<option value="400">400</option>
+				<option value="500">500</option>
+				<option value="600">600</option>
+				<option value="700">700</option>
+				<option value="800">800</option>
+				<option value="900">900</option>
+			</field>
+
+			<field
+				name="font-color-h4"
+				type="color"
+				class="t3tm-color"
+				label="H4 Heading color"
+				description=""
+			/>
+
+			<field
+				name="font-style-h4"
+				type="list"
+				label="H4 Heading font-style"
+				description="">
+				<option value="normal">normal</option>
+				<option value="italic">italic</option>
+				<option value="oblique">oblique</option>
+				<option value="inherit">inherit</option>
+			</field>
+
+			<field
+				name="font-text-align-h4"
+				type="list"
+				label="H4 Heading font text-align"
+				description="">
+				<option value="center">center</option>
+				<option value="justify">justify</option>
+				<option value="left">left</option>
+				<option value="right">right</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="h5_params" label="H5 Heading settings">
+
+			<field
+				name="font-size-h5"
+				type="text"
+				size="15"
+				class="input-tiny t3tm-dimension" 
+				label="H5 Heading font-size"
+				description=""
+			/>
+
+			<field
+				name="font-lh-h5"
+				type="text"
+				size="15"
+				class="input-tiny" 
+				label="H5 Heading line-height"
+				description=""
+			/>
+
+			<field name="font-weight-h5" type="list" label="H5 Heading font-weight" description="">
+				<option value="100">100</option>
+				<option value="200">200</option>
+				<option value="300">300</option>
+				<option value="400">400</option>
+				<option value="500">500</option>
+				<option value="600">600</option>
+				<option value="700">700</option>
+				<option value="800">800</option>
+				<option value="900">900</option>
+			</field>
+
+			<field
+				name="font-color-h5"
+				type="color"
+				class="t3tm-color"
+				label="H5 Heading color"
+				description=""
+			/>
+
+			<field
+				name="font-style-h5"
+				type="list"
+				label="H5 Heading font-style"
+				description="">
+				<option value="normal">normal</option>
+				<option value="italic">italic</option>
+				<option value="oblique">oblique</option>
+				<option value="inherit">inherit</option>
+			</field>
+
+			<field
+				name="font-text-align-h5"
+				type="list"
+				label="H5 Heading font text-align"
+				description="">
+				<option value="center">center</option>
+				<option value="justify">justify</option>
+				<option value="left">left</option>
+				<option value="right">right</option>
+			</field>
+		</fieldset>
+
+
+		<fieldset name="h6_params" label="H6 Heading settings">
+
+			<field
+				name="font-size-h6"
+				type="text"
+				size="15"
+				class="input-tiny t3tm-dimension" 
+				label="H6 Heading font-size"
+				description=""
+			/>
+
+			<field
+				name="font-lh-h6"
+				type="text"
+				size="15"
+				class="input-tiny" 
+				label="H6 Heading line-height"
+				description=""
+			/>
+
+			<field name="font-weight-h6" type="list" label="H6 Heading font-weight" description="">
+				<option value="100">100</option>
+				<option value="200">200</option>
+				<option value="300">300</option>
+				<option value="400">400</option>
+				<option value="500">500</option>
+				<option value="600">600</option>
+				<option value="700">700</option>
+				<option value="800">800</option>
+				<option value="900">900</option>
+			</field>
+
+			<field
+				name="font-color-h6"
+				type="color"
+				class="t3tm-color"
+				label="H6 Heading color"
+				description=""
+			/>
+
+			<field
+				name="font-style-h6"
+				type="list"
+				label="H6 Heading font-style"
+				description="">
+				<option value="normal">normal</option>
+				<option value="italic">italic</option>
+				<option value="oblique">oblique</option>
+				<option value="inherit">inherit</option>
+			</field>
+
+			<field
+				name="font-text-align-h6"
+				type="list"
+				label="H6 Heading font text-align"
+				description="">
+				<option value="center">center</option>
+				<option value="justify">justify</option>
+				<option value="left">left</option>
+				<option value="right">right</option>
+			</field>
+		</fieldset>
+		
+
+		<fieldset name="colors_params" label="Global colors">        
+			<field name="global-color" type="color" class="t3tm-color" label="Global color" description="" />
+			<field name="global-color2" type="color" class="t3tm-color" label="Global color 2" description="" />
+		</fieldset>
+    
+		<fieldset name="advanced_params" label="T3_TM_ADVANCED">
+			<field name="import-external-urls" type="textarea" cols="30" rows="5"
+				label="T3_TM_VARS_IMPORT_EXTERNAL_URLS_LABEL"
+				description="T3_TM_VARS_IMPORT_EXTERNAL_URLS_DESC" />
+    </fieldset>
+	</fields>
+</form>

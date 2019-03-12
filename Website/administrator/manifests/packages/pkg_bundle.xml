@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0">
+	<name>bundle</name>
+	<packagename>bundle</packagename>
+	<version>1.12.32</version>
+	<description>
+		<![CDATA[
+			<p>This package installs the following Joomla extensions:</p>
+			<ul>
+				<li>Package Kunena</li>
+				<li>Package SocialLogin and SocialShare</li>
+				<li>Package Jbetolo</li>
+				<li>Component JoomGallery</li>
+				<li>Component Acymailing Starter</li>
+				<li>Module Newsflash Advanced</li>
+				<li>Module Articles Single</li>
+				<li>Module Ice Mega Menu</li>
+				<li>Module Bootstrap Collapse</li>
+				<li>Module Bootstrap Tabs</li>
+				<li>Module Recent templates (admin panel)</li>
+				<li>Module TM Ajax Contact Form</li>
+				<li>Module TM Fasebook Page Plugin</li>
+				<li>Module SW PinterestDisplay</li>
+				<li>Module TM Instagram</li>
+				<li>Module SW TwitterDisplay</li>
+				<li>Module TM Olark Live Chat</li>
+				<li>Module TM Parallax</li>
+				<li>Module TM Style Switcher</li>
+				<li>Module Counters</li>
+				<li>Module TM Youtube background video</li>
+				<li>Module Swiper</li>
+				<li>Module Owl Carousel</li>
+				<li>Plugin Google Map</li>
+				<li>Plugin AddThis</li>
+				<li>Plugin EUCookieDirectiveLite</li>
+				<li>Plugin JoomFancybox</li>
+				<li>Plugin TM Wrapper</li>
+			</ul>
+		]]>
+	</description>
+
+	<files folder="packages">
+		<file type="package" id="com_acymailing">com_acymailing_starter_v5.0.0.zip</file> 
+		<file type="package" id="pkg_kunena">pkg_kunena_v3.0.6_custom.zip</file>
+		<file type="package" id="com_socialloginandsocialshare">social-login-and-social-share-module.zip</file>
+		<file type="package" id="com_joomgallery">JoomGallery-3.2.2.zip</file>
+		<file type="package" id="com_jbetolo">jbetolo-2.6.1.zip</file>
+		<file type="module" id="mod_acymailing" client="site">mod_acymailing.zip</file>
+		<file type="module" id="mod_articles_news_adv" client="site">mod_articles_news_adv_j3_v1.5.6.zip</file>
+		<file type="module" id="mod_articles_single" client="site">mod_articles_single_v1.2.3.zip</file>
+		<file type="module" id="mod_bootstrap_collapse" client="site">mod_bootstrap_collapse_v1.0.2.zip</file>
+		<file type="module" id="mod_bootstraptabs" client="site">mod_bootstraptabs_v1.0.2.zip</file>
+		<file type="module" id="mod_counters" client="site">mod_counters_v1.0.1.zip</file>
+		<file type="module" id="mod_icemegamenu" client="site">mod_icemegamenu_v.3.0.8_custom.zip</file>
+		<file type="module" id="mod_sw_pinterestDisplay" client="site">mod_sw_pinterestDisplay.zip</file>
+		<file type="module" id="mod_sw_twitterDisplay" client="site">mod_sw_twitterDisplay.zip</file>
+		<file type="module" id="mod_tm_ajax_contact_form" client="site">mod_tm_ajax_contact_form_v.2.1.0.zip</file>
+		<file type="module" id="mod_tm_bg_youtube" client="site">mod_tm_bg_youtube_v1.0.2.zip</file>
+		<file type="module" id="mod_tm_facebook_page_plugin" client="site">mod_tm_facebook_page_plugin_v1.0.2.zip</file>
+		<file type="module" id="mod_tm_instagram" client="site">mod_tm_instagram_v1.0.2.zip</file>
+		<file type="module" id="mod_tm_olark_chat" client="site">mod_tm_olark_chat_v1.0.1.zip</file>
+		<file type="module" id="mod_tm_parallax" client="site">mod_tm_parallax_v1.1.0.zip</file>
+		<file type="module" id="mod_owl_carousel" client="site">mod_owl_carousel_v1.0.0.zip</file>
+		<file type="module" id="mod_swiper" client="site">mod_swiper_v1.0.0.zip</file>
+		<file type="module" id="mod_tm_style_switcher" client="site">mod_tm_style_switcher_v1.0.2.zip</file>
+		<file type="module" id="mod_tm_templates" client="administrator">mod_tm_templates_j3_v1.0.0.zip</file>
+		<file type="plugin" id="EUCookieDirectiveLite" group="system">EUCookieDirectiveLite_j30.zip</file>
+		<file type="plugin" id="plg_acymailing_contentplugin" group="acymailing">plg_acymailing_contentplugin.zip</file>
+		<file type="plugin" id="plg_acymailing_managetext" group="acymailing">plg_acymailing_managetext.zip</file>
+		<file type="plugin" id="plg_acymailing_online" group="acymailing">plg_acymailing_online.zip</file>
+		<file type="plugin" id="plg_acymailing_share" group="acymailing">plg_acymailing_share.zip</file>
+		<file type="plugin" id="plg_acymailing_stats" group="acymailing">plg_acymailing_stats.zip</file>
+		<file type="plugin" id="plg_acymailing_tablecontents" group="acymailing">plg_acymailing_tablecontents.zip</file>
+		<file type="plugin" id="plg_acymailing_tagcbuser" group="acymailing">plg_acymailing_tagcbuser.zip</file>
+		<file type="plugin" id="plg_acymailing_tagcontent" group="acymailing">plg_acymailing_tagcontent.zip</file>
+		<file type="plugin" id="plg_acymailing_tagsubscriber" group="acymailing">plg_acymailing_tagsubscriber.zip</file>
+		<file type="plugin" id="plg_acymailing_tagsubscription" group="acymailing">plg_acymailing_tagsubscription.zip</file>
+		<file type="plugin" id="plg_acymailing_tagtime" group="acymailing">plg_acymailing_tagtime.zip</file>
+		<file type="plugin" id="plg_acymailing_taguser" group="acymailing">plg_acymailing_taguser.zip</file>
+		<file type="plugin" id="plg_acymailing_template" group="acymailing">plg_acymailing_template.zip</file>
+		<file type="plugin" id="plg_editors_acyeditor" group="editors">plg_editors_acyeditor.zip</file>
+		<file type="plugin" id="plg_icemegamenu_custom" group="system">plg_icemegamenu_custom.zip</file>
+		<file type="plugin" id="plg_joomfancybox" group="joomgallery">plg_joomfancybox_v1_1.zip</file>
+		<file type="plugin" id="plg_system_regacymailing" group="system">plg_system_regacymailing.zip</file>
+		<file type="plugin" id="plg_tmaddthis" group="content">plg_tmaddthis_v1.0.8.zip</file>
+		<file type="plugin" id="plg_tmwrapper" group="system">plg_tmwrapper_v1.0.0.zip</file>
+		<file type="plugin" id="plugin_googlemap3" group="system">plugin_googlemaps-J25_J3x.v3.3.zip</file>
+	 </files>
+ </extension>

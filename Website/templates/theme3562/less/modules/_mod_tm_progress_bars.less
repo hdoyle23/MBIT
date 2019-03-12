@@ -1,0 +1,112 @@
+// ============================
+// Progress bars Modules
+// ============================
+
+.mod_tm_progress_bars{
+	margin-bottom: @line-height-base*2;
+	//Linear
+	.progress-linear{
+		margin-bottom: 50px;
+	    position: relative;
+	    height: 12px;
+
+		.progress-header{
+
+			.progress-title{
+			    float: left;
+			}
+
+			.progress-value{
+			    float: right;
+
+			    &:after{
+			      content:"%";
+			    }
+			}
+		}
+
+		.progress-bar-linear-wrap{
+			background: @gray-lighter;
+			height: 100%;
+    		border-radius: 3px;
+
+			.progress-bar-linear{
+				height: 100%;
+    			border-radius: 3px;
+				width: 0;
+    			.transition(.5s all ease);
+			}
+
+
+		}
+	}
+
+	//Circle
+	.progress-circle{
+
+		text-align: center;
+  		margin-bottom: 30px;
+
+		.progress-bar-circle{
+			display: inline-block;
+		    position: relative;
+		    text-align: center;
+		    line-height: 1.2;
+		    text-align: center;
+		    padding: 10%;
+
+		    @media(max-width: 1199px){
+			    padding: 0;
+			}
+
+			@media(max-width: 767px){
+			    padding: 20%;
+			}
+
+			@media(max-width: 479px){
+			    padding: 10%;
+			}
+
+			&:before {
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    width: 74%;
+			    height: 74%;
+			    content: '';
+			    .translate(-50%, -50%);
+			    border-radius: 50%;
+			}
+
+			canvas{
+				vertical-align: middle;
+			    max-width: 100%;
+			    max-height: 100%;
+			    width: 100%;
+			}
+
+			span{
+				position: absolute;
+			    top: 48%;
+			    left: 50%;
+			    font-weight: 800;
+			    font-size: 38px;
+			    line-height: 38px;
+			    .translate(-50%, -50%);
+
+			    &:after {
+			      content: '%';
+			    }
+			}
+		}
+
+		.title{
+
+		}
+	}
+
+}
+
+.mod_tm_progress_bars__{
+	
+}

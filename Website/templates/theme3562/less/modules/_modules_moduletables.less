@@ -1,0 +1,28 @@
+// =======================
+// Modules moduletables
+// =======================
+
+.moduletable{
+  .clearfix;
+  &.col-sm-12 + .moduletable {
+    clear: both;
+  }
+  &.col-sm-12:last-child {
+    margin-bottom: 0;
+  }
+
+  &.col-sm-12 + * {
+    margin-top: 0;
+  }
+
+  &.facebook,
+  &.twitter{
+    @media(max-width: 767px){
+      text-align: center;
+    }
+  }
+}
+
+.moduletable{
+  
+}

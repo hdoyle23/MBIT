@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+		
+	</scripts>
+	
+	<stylesheets>
+		<file>fonts/font-awesome/css/font-awesome.css</file>
+		<file>fonts/material-design/css/material-design.css</file>
+		<file>fonts/material-icons/css/material-icons.css</file>
+		<file>fonts/thin/css/thin.css</file>
+		<file>fonts/glyphicons/css/glyphicons.css</file>
+	</stylesheets>
+	
+</assets>

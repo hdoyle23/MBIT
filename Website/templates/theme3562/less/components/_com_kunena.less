@@ -1,0 +1,798 @@
+#Kunena td,
+#Kunena table,
+#Kunena th,
+#Kunena div,
+#Kunena p,
+#Kunena span,
+#Kunena .knewchar,
+#Kunena #ktab a span {
+  font-family: inherit;
+}
+
+.option-com_kunena{
+  .datepicker{
+
+    .datepicker-days{
+      table{
+        th{
+          border-radius: 0 !important;
+        }
+      }
+    }
+    tr{
+      th.prev,
+      th.next,
+      th.datepicker-switch{
+        .transition(.3s);
+        &:hover{
+          background: #eee;
+          color: #777;
+        }
+      }
+    }
+  }
+}
+
+#kunena{
+
+  table,
+  .table{
+    margin-bottom: 35px;
+    border: 1px solid @table-border-color;
+
+    tr{
+      border: 1px solid @table-border-color;
+
+      td{
+         border: 1px solid @table-border-color;
+      }
+    }
+  }
+
+  .table-bordered > thead > tr > th,
+  .table-bordered > thead > tr > td{
+    border-bottom-width: 1px;
+  }
+
+  .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{
+    border: 1px solid @table-border-color;
+  }
+
+  .chzn-results{
+    li{
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .well{
+     border: 1px solid #f9f9f9;
+  }
+
+  & + div{
+    margin-bottom: 50px;
+  }
+
+  #gender_chzn{
+    min-width: 100px !important;
+  }
+
+  #editavatar{
+    @media(max-width: 991px){
+      overflow-x: auto;
+    }
+  }
+
+  .kunena-wrapper{
+    .clearfix();
+
+    .kunena-profile-edit-btn{
+
+      @media(max-width: 767px){
+          display: block;
+          .clearfix();
+          float: left !important;
+      }
+    }
+
+    @media(max-width: 767px){
+      .h1-heading{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  #KunenaUserEdit{
+    #editprofile,
+    #editavatar{
+      @media(max-width: 991px){
+        overflow-x: auto;
+      }
+    }
+
+    select,
+    input,
+    textarea{
+      width: 100%;
+    }
+  }  
+
+  #editsettings{
+    .chzn-container{
+       min-width: 100px !important;
+    }
+  }
+
+  #ktopicsform{
+    @media(max-width: 991px){
+      overflow-x: auto;
+    }
+   
+
+    .chzn-container{
+      width: auto !important;
+    }
+
+    .chzn-results{
+      li{
+        white-space: normal;
+      }
+    }
+
+    .input-group-btn{
+      .btn{
+        vertical-align: top;
+      }
+
+      @media(max-width: 767px){
+        .btn,
+        input,
+        .chzn-container{
+          display: block;
+          width: 100%;
+        }
+
+        .btn{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .btn{
+    margin-bottom: 10px;
+  }
+
+  .btn-xs{
+    padding: 6px 8px;
+  }
+
+  .btn-toolbar{
+    margin: 0;
+  }
+
+  #postform{
+    label + *{
+      margin-top: 0;
+    }
+
+    #kpost-subject{
+      margin-bottom: 20px;
+    }
+
+    #kshow_attach_form{
+      margin: 0;
+    }
+
+    #kpost-subscribe{
+      .control-label{
+        padding: 0;
+      }
+
+      label.string{
+        display: inline;
+      }
+    }
+
+    #kattach_form{
+      margin-top: 10px;
+    }
+  }
+
+  #topic-actions{
+    margin-bottom: 20px;
+    .btn{
+      & + .btn{
+        margin-left: 0;
+      }
+    }
+
+    .btn-group{
+      margin-right: 10px;
+    }
+  }
+
+  select{
+    padding: 0 20px;
+    margin-bottom: 10px;
+    @media(max-width: 1199px){
+      width: 100% !important;
+    }
+  }
+
+  input{
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+
+  .cunena-date{
+    display: table !important;
+  }
+
+  .well{
+    text-align: left;
+  }
+
+  #kuserlist-form{
+    .table{
+      th{
+        background:transparent;
+        color: @text-color;
+      }
+    }
+  }
+
+  .pagination{
+    margin-top: 15px;
+
+    li{
+      a{
+        &:hover{
+          color: @white;
+          background: @text-color;
+        }
+      }
+      
+
+      &.active{
+        background: @text-color;
+        color: @white;
+      }
+    }
+  }
+
+  
+  .alert.alert-info {
+      padding: 15px;
+      &:before {
+          display: none;
+      }
+  }
+
+  a.label.label-default {
+      background: @green;
+      color: @white;
+      &:hover {
+          background: @gray-darker;
+      }
+  }
+
+  #searchatdate{
+    .input-group-addon{
+      cursor: pointer;
+    }
+
+    input{
+      margin-bottom: 0;
+    }
+  }
+
+  .h1-heading{
+    font-size: 30px;
+    line-height: 40px;
+    color: #333333;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .h2-heading{
+    color: #333333;
+    display: block;
+    font-size: 21px;
+    line-height: 60px;
+  }
+
+  div.chzn-container-single .chzn-single span{
+    margin-right: 10px !important;
+    padding-right: 0;
+  }
+
+  div.chzn-container-single .chzn-single div{
+    width: 30px;
+  }
+
+  nav{
+    &.navbar{
+      background: transparent;
+      border: none;
+      min-height: auto;
+      text-align: center;
+      .navbar-nav{
+        margin: 0;
+      }
+    }
+  }
+
+  ol{
+    li{
+      &:before{
+        display: none;
+      }
+    }
+  }
+
+  #categoryactions{
+    .chzn-container{
+      display: block;
+      width: 100% !important;
+    }
+
+    .table{
+      .category{
+        border-bottom: 1px solid #dddddd;
+      }
+    }
+  }
+
+  .row.message{
+    padding: 20px 0;
+    border-bottom: 2px solid #eaeaea;
+
+    .btn{
+      & + .btn{
+        margin-left: 0;
+      }
+    }
+  }
+
+  .message-published{
+    margin-bottom: 25px;
+    .text-muted.pull-right {
+        float: none !important;
+        display: block;
+        padding-bottom: 15px;
+    }
+  }
+
+  .kfrontend{
+    thead{
+      background: @global-color;
+      color: white;
+      .well{
+        background: transparent;
+        border: none;
+        text-align: center;
+        .box-shadow(none);
+        margin: 0;
+      }
+    }
+  }
+
+
+
+  .pagination{
+    li{
+      background: @global-color;
+      float: left;
+      display: inline-block;
+      margin-right: 10px;
+      .transition(.3s);
+      a{
+        color: white;
+        padding: 8px 10px;
+      }
+
+      &:hover{
+        background: @global-color2;
+      }
+    }
+  }
+
+  #jumpto{
+    margin-bottom: 30px;
+  }
+
+  .h3-heading{
+     .glyphicon{
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  .glyphicon,
+  .fa{
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .btn-link{
+    color: @global-color;
+    small{
+      color: @text-color;
+    }
+
+    &:hover{
+      color: @global-color2;
+      text-decoration: none;
+      small{
+        text-decoration: none;
+      }
+    }
+  }
+
+  .well{
+    background: transparent;
+    .border-radius(0);
+  }
+
+  .search-block{
+    float: none;
+    text-align: left;
+  }
+
+  .search{
+    input{
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .btn{
+    }
+  }
+
+  .category{
+    td.col-md-1{
+      vertical-align: middle;
+    }
+  }
+
+  ul.list-unstyled{
+    margin: 0;
+  }
+
+  .replies{
+    .repliesnum{
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  @media(max-width: 767px){
+    .kfrontend{
+      .text-center{
+        text-align: right;
+      }
+    }
+    
+  }
+}
+
+#kunena.layout #kbbcode-smilies-button {
+    background-position: -108px -18px;
+}
+#kunena.layout .kbbcode-preview-bottom {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin: 10px;
+    min-height: 150px;
+    padding: 4px 12px;
+}
+#kunena.layout .markItUp .boldbutton a {
+    background-image: url("../images/kunena/images/bold.png");
+}
+#kunena.layout .markItUp .italicbutton a {
+    background-image: url("../images/kunena/images/italic.png");
+}
+#kunena.layout .markItUp .underlinebutton a {
+    background-image: url("../images/kunena/images/underline.png");
+}
+#kunena.layout .markItUp .strokebutton a {
+    background-image: url("../images/kunena/images/stroke.png");
+}
+#kunena.layout .markItUp .supscriptbutton a {
+    background-image: url("../images/kunena/images/supscript.png");
+}
+#kunena.layout .markItUp .subscriptbutton a {
+    background-image: url("../images/kunena/images/subscript.png");
+}
+#kunena.layout .markItUp .sizebutton a {
+    background-image: url("../images/kunena/images/fonts.png");
+}
+#kunena.layout .markItUp .colors a {
+    background-image: url("../images/kunena/images/colors.png");
+}
+#kunena.layout .markItUp .bulletedlistbutton a {
+    background-image: url("../images/kunena/images/list-bullet.png");
+}
+#kunena.layout .markItUp .numericlistbutton a {
+    background-image: url("../images/kunena/images/list-numeric.png");
+}
+#kunena.layout .markItUp .listitembutton a {
+    background-image: url("../images/kunena/images/list-item.png");
+}
+#kunena.layout .markItUp .alignleftbutton a {
+    background-image: url("../images/kunena/images/text_align_left.png");
+}
+#kunena.layout .markItUp .centerbutton a {
+    background-image: url("../images/kunena/images/text_align_center.png");
+}
+#kunena.layout .markItUp .alignrightbutton a {
+    background-image: url("../images/kunena/images/text_align_right.png");
+}
+#kunena.layout .markItUp .quotebutton a {
+    background-image: url("../images/kunena/images/quotes.png");
+}
+#kunena.layout .markItUp .codemodalboxbutton a, #kunena.layout .markItUp .codesimplebutton a {
+    background-image: url("../images/kunena/images/code.png");
+}
+#kunena.layout .markItUp .tablebutton a {
+    background-image: url("../images/kunena/images/table.png");
+}
+#kunena.layout .markItUp .spoilerbutton a {
+    background-image: url("../images/kunena/images/spoiler.png");
+}
+#kunena.layout .markItUp .hiddentextbutton a {
+    background-image: url("../images/kunena/images/hidden.png");
+}
+#kunena.layout .markItUp .picturebutton a {
+    background-image: url("../images/kunena/images/picture.png");
+}
+#kunena.layout .markItUp .linkbutton a {
+    background-image: url("../images/kunena/images/link.png");
+}
+#kunena.layout .markItUp .ebaybutton a {
+    background-image: url("../images/kunena/images/ebay.png");
+}
+#kunena.layout .markItUp .videodropdownbutton a {
+    background-image: url("../images/kunena/images/film.png");
+}
+#kunena.layout .markItUp .mapbutton a {
+    background-image: url("../images/kunena/images/map.png");
+}
+#kunena.layout .markItUp .pollbutton a {
+    background-image: url("../images/kunena/images/poll.png");
+}
+#kunena.layout .markItUp .tweetbutton a {
+    background-image: url("../images/kunena/images/tweet.png");
+}
+#kunena.layout .markItUp .soundcloudbutton a {
+    background-image: url("../images/kunena/images/soundcloud.png");
+    margin-left: -3px;
+    margin-top: 3px;
+}
+#kunena.layout .markItUp .instagrambutton a {
+    background-image: url("../images/kunena/images/instagram.png");
+}
+#kunena.layout .markItUp .hrbutton a {
+    background-image: url("../images/kunena/images/hr.png");
+}
+#kunena.layout .markItUp .emoticonsbutton a {
+    background-image: url("../images/kunena/images/emoticon.png");
+}
+#kunena.layout .markItUp .confidentialbutton a {
+    background-image: url("../images/kunena/images/confidential.png");
+}
+#kunena.layout .markItUp .clean a {
+    background-image: url("../images/kunena/images/clean.png");
+}
+#kunena.layout .markItUp .colors ul {
+    padding: 1px;
+    width: auto;
+}
+#kunena.layout .markItUp .colors li {
+    border: 1px solid white;
+    float: left;
+    height: 25px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 25px;
+}
+#kunena.layout .markItUp .colors ul a {
+    height: 25px;
+    width: 25px;
+}
+#kunena.layout .markItUp .colors .col1-1 a {
+    background: black none repeat scroll 0 0;
+}
+#kunena.layout .markItUp .colors .col1-2 a {
+    background: orange none repeat scroll 0 0;
+}
+#kunena.layout .markItUp .colors .col1-3 a {
+    background: red none repeat scroll 0 0;
+}
+#kunena.layout .markItUp .colors .col2-1 a {
+    background: blue none repeat scroll 0 0;
+}
+#kunena.layout .markItUp .colors .col2-2 a {
+    background: purple none repeat scroll 0 0;
+}
+#kunena.layout .markItUp .colors .col2-3 a {
+    background: green none repeat scroll 0 0;
+}
+#kunena.layout .markItUp .colors .col3-1 a {
+    background: white none repeat scroll 0 0;
+}
+#kunena.layout .markItUp .colors .col3-2 a {
+    background: gray none repeat scroll 0 0;
+}
+#kunena.layout .markItUp .colors .col3-3 a {
+    background: black none repeat scroll 0 0;
+}
+#kunena.layout .markItUp {
+    width: 100%;
+}
+#kunena.layout .markItUpContainer {
+    width: 100%;
+}
+#kunena.layout .markItUpEditor {
+    border: 1px solid #e5e5e5;
+    clear: both;
+    display: block;
+    line-height: 18px;
+    margin: 0;
+    overflow: auto;
+    padding: 5px;
+}
+#kunena.layout .markItUpEditor a {
+    box-sizing: content-box;
+}
+#kunena.layout .markItUpPreviewFrame {
+    background-color: #ffffff;
+    height: 350px;
+    margin: 5px 0;
+    overflow: auto;
+    width: 99.9%;
+}
+#kunena.layout .markItUpHeader {
+    height: 25px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+#kunena.layout .markItUpFooter {
+    height: 25px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+#kunena.layout .markItUpHeader ul li {
+    box-sizing: content-box;
+    float: left;
+    list-style: outside none none;
+    position: relative;
+}
+#kunena.layout .markItUpHeader ul li:hover > ul {
+    display: block;
+}
+#kunena.layout .markItUpHeader ul .markItUpDropMenu li {
+    margin-right: 0;
+}
+#kunena.layout .markItUpHeader ul ul {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e5e5e5;
+    display: none;
+    left: 0;
+    margin-top: 10px;
+    position: absolute;
+    top: 18px;
+}
+#kunena.layout .markItUpHeader ul ul li {
+    border-bottom: 1px solid #e5e5e5;
+    float: none;
+}
+#kunena.layout .markItUpHeader ul .markItUpSeparator {
+    border-left: 1px solid #ccc;
+    color: #ccc;
+    height: 24px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-indent: -10000px;
+    width: 1px;
+}
+#kunena.layout .markItUpHeader ul ul .markItUpSeparator {
+    height: 1px;
+    margin: 0;
+    width: auto;
+}
+#kunena.layout .markItUpHeader ul ul ul {
+    left: 150px;
+    position: absolute;
+    top: -1px;
+}
+#kunena.layout .markItUpHeader ul ul ul li {
+    float: none;
+}
+#kunena.layout .markItUpHeader ul a {
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    display: block;
+    height: 16px;
+    margin: 0;
+    padding: 4px;
+    text-indent: -10000px;
+    width: 16px;
+}
+#kunena.layout .markItUpHeader ul ul a {
+    background-position: 2px 50%;
+    display: block;
+    padding: 5px 5px 5px 25px;
+    text-indent: 0;
+    width: 150px;
+}
+#kunena.layout .markItUpHeader ul ul a:hover {
+    background-color: #3875d7;
+    color: #fff;
+}
+#kunena.layout .markItUpHeader ul {
+    margin: 0;
+    padding: 0;
+}
+#kunena.layout .markItUpButton {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 12px;
+    margin-bottom: 0;
+    padding-top: 4px;
+}
+#kunena.layout li.markItUpButton ul {
+    z-index: 1;
+}
+#kunena.layout .dropzone .message {
+    filter: none;
+    opacity: 1;
+}
+#kunena.layout .dropzone {
+    background: rgba(0, 0, 0, 0.03) none repeat scroll 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    min-height: 120px;
+    padding: 23px;
+}
+#kunena.layout .dropzone .default.message {
+    background: rgba(0, 0, 0, 0) none no-repeat scroll 0 0;
+    filter: none;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0s;
+}
+#kunena.layout #klabel_info_drop_browse {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#kunena.layout #files {
+    padding-bottom: 10px;
+}
+#kunena.layout #files button.btn {
+    margin-right: 5px;
+}
+#kunena.layout #files p {
+    margin: 15px 0 0;
+}
+#kunena.layout #kbbcode-preview-real {
+    min-height: 3em;
+}
+#kunena.layout #kbbcode-preview {
+    height: auto !important;
+    margin-bottom: 35px;
+}
+#kunena.layout #kshow_attach_form {
+    margin-top: -100px;
+}
+#kunena.layout #iconset_inject .inline:hover {
+    cursor: pointer;
+}

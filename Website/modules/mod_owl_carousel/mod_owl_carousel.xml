@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.4.0"
+	client="site"
+	method="upgrade">
+	<name>mod_owl_carousel</name>
+	<author>TemplateMonster</author>
+	<creationDate>February 2016</creationDate>
+	<copyright>Copyright (c) 2012-2017 by TemplateMonster - www.templatemonster.com</copyright>
+	<license>Licensed under the GNU/GPLv2:  http://www.opensource.org/licenses/mit-license.php</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.templatemonster.com</authorUrl>
+	<version>1.0.1</version>
+	<description>MOD_OWL_CAROUSEL_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_owl_carousel">mod_owl_carousel.php</filename>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_owl_carousel.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_owl_carousel.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_owl_carousel.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_ARTICLES_NEWSFLASH" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					default=""
+					size="10"
+					label="JCATEGORY"
+					description="MOD_OWL_CAROUSEL_FIELD_CATEGORY_DESC" >
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+
+				<field
+					name="image"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_OWL_CAROUSEL_FIELD_IMAGES_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_IMAGES_DESC">
+					<option
+						value="0">JHIDE</option>
+					<option
+						value="1">JSHOW</option>
+				</field>
+
+				<field
+					name="item_title"
+					type="radio"
+					default="0"
+					class="btn-group"
+					label="MOD_OWL_CAROUSEL_FIELD_TITLE_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_TITLE_DESC">
+					<option
+						value="0">JHIDE</option>
+					<option
+						value="1">JSHOW</option>
+				</field>
+
+				<field
+					name="link_titles"
+					type="radio"
+					class="btn-group"
+					label="MOD_OWL_CAROUSEL_FIELD_LINKTITLE_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_LINKTITLE_DESC">
+					<option
+						value="">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+
+				<field
+					name="published"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_OWL_CAROUSEL_FIELD_PUBLISHED_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_PUBLISHED_DESC">
+					<option
+						value="0">JHIDE</option>
+					<option
+						value="1">JSHOW</option>
+				</field>
+
+				<field
+					name="item_heading"
+					type="list"
+					default="h4"
+					label="MOD_OWL_CAROUSEL_TITLE_HEADING"
+					description="MOD_OWL_CAROUSEL_TITLE_HEADING_DESCRIPTION">
+					<option
+						value="h1">JH1</option>
+					<option
+						value="h2">JH2</option>
+					<option
+						value="h3">JH3</option>
+					<option
+						value="h4">JH4</option>
+					<option
+						value="h5">JH5</option>
+					<option
+						value="h6">JH6</option>
+				</field>
+
+			<field name="show_tags" type="radio"
+				class="btn-group"
+				default="0"
+				label="MOD_OWL_CAROUSEL_FIELD_SHOW_TAGS_LABEL"
+				description="MOD_OWL_CAROUSEL_FIELD_SHOW_TAGS_DESC"
+				labelclass="control-label"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+				<field
+					name="intro_image"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_OWL_CAROUSEL_FIELD_INTRO_IMAGES_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_INTRO_IMAGES_DESC">
+					<option
+						value="0">JHIDE</option>
+					<option
+						value="1">JSHOW</option>
+				</field>
+
+				<field
+					name="intro_image_align"
+					type="radio"
+					class="btn-group"
+					default="none"
+					label="MOD_OWL_CAROUSEL_FIELD_INTRO_IMAGES_ALIGN_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_INTRO_IMAGES_ALIGN_DESC">
+					<option
+						value="none">None</option>
+					<option
+						value="left">left</option>
+					<option
+						value="right">right</option>
+				</field>
+
+				<field
+					name="readmore"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_OWL_CAROUSEL_FIELD_READMORE_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_READMORE_DESC">
+					<option
+						value="0">JHIDE</option>
+					<option
+						value="1">JSHOW</option>
+				</field>
+
+				<field
+					name="count"
+					type="text"
+					default="5"
+					label="MOD_OWL_CAROUSEL_FIELD_ITEMS_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_ITEMS_DESC" />
+
+				<field
+					name="ordering"
+					type="list"
+					label="MOD_OWL_CAROUSEL_FIELD_ORDERING_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_ORDERING_DESC"
+					default="a.publish_up"
+					>
+					<option value="a.publish_up">MOD_OWL_CAROUSEL_ORDERING_PUBLISHED_DATE</option>
+					<option value="a.created">MOD_OWL_CAROUSEL_ORDERING_CREATED_DATE</option>
+					<option value="a.modified">MOD_OWL_CAROUSEL_ORDERING_MODIFIED_DATE</option>
+					<option value="a.ordering">MOD_OWL_CAROUSEL_ORDERING_ORDERING</option>
+					<option value="a.hits">JGLOBAL_HITS</option>
+					<option value="rand()">MOD_OWL_CAROUSEL_ORDERING_RANDOM</option>
+				</field>
+
+				<field
+					name="direction"
+					type="list"
+					label="JGLOBAL_ORDER_DIRECTION_LABEL"
+					description="JGLOBAL_ORDER_DIRECTION_DESC"
+					default="1"
+					showon="ordering:a.publish_up,a.created,a.modified,a.ordering,a.hits"
+					>
+					<option value="0">JGLOBAL_ORDER_ASCENDING</option>
+					<option value="1">JGLOBAL_ORDER_DESCENDING</option>
+				</field>
+
+				<field
+					type="textarea"
+					name="pretext"
+					rows="5"
+					cols="5"
+					filter="raw"
+					label="MOD_OWL_CAROUSEL_FIELD_PRETEXT_LABEL"
+					description="MOD_OWL_CAROUSEL_FIELD_PRETEXT_DESC">
+				</field>
+
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+
+			</fieldset>
+
+			<fieldset
+				name="OWL_CAROUSEL">
+
+				<field type="spacer" label="MOD_OWL_CAROUSEL_SPACER_ITEMS_LABEL" ></field>
+
+				<field
+					name="items"
+					type="text"
+					default="4"
+					label="MOD_OWL_CAROUSEL_ITEMS_LABEL"
+					description="MOD_OWL_CAROUSEL_ITEMS_DESC">
+				</field>
+
+				<field
+					name="autoplay"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_OWL_CAROUSEL_AUTOPLAY_LABEL"
+					description="MOD_OWL_CAROUSEL_AUTOPLAY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="autoplay_speed"
+					type="text"
+					default="5000"
+					label="MOD_OWL_CAROUSEL_AUTOPLAY_SPEED_LABEL"
+					description="MOD_OWL_CAROUSEL_AUTOPLAY_SPEED_DESC">
+				</field>
+
+				<field
+					name="scene_padding_0"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_SCENE_PADDING_0_LABEL"
+					description="MOD_OWL_CAROUSEL_SCENE_PADDING_0_DESC">
+				</field>
+
+				<field
+					name="items_padding_0"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_ITEMS_PADDING_0_LABEL"
+					description="MOD_OWL_CAROUSEL_ITEMS_PADDING_0_DESC">
+				</field>
+
+				<field type="spacer" label="MOD_OWL_CAROUSEL_SPACER_RESPONSIVE_LABEL" ></field>
+
+				<field
+					name="use_responsive"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_OWL_CAROUSEL_USE_RESPONSIVE_LABEL"
+					description="MOD_OWL_CAROUSEL_USE_RESPONSIVE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field type="spacer" label="MOD_OWL_CAROUSEL_SPACER_RESPONSIVE_1200_LABEL" ></field>
+
+				<field
+					name="scene_padding_1200"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_SCENE_PADDING_1200_LABEL"
+					description="MOD_OWL_CAROUSEL_SCENE_PADDING_1200_DESC">
+				</field>
+
+				<field
+					name="items_padding_1200"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_ITEMS_PADDING_1200_LABEL"
+					description="MOD_OWL_CAROUSEL_ITEMS_PADDING_1200_DESC">
+				</field>
+
+				<field type="spacer" label="MOD_OWL_CAROUSEL_SPACER_RESPONSIVE_992_LABEL" ></field>
+
+				<field
+					name="scene_padding_992"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_SCENE_PADDING_992_LABEL"
+					description="MOD_OWL_CAROUSEL_SCENE_PADDING_992_DESC">
+				</field>
+
+				<field
+					name="items_padding_992"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_ITEMS_PADDING_992_LABEL"
+					description="MOD_OWL_CAROUSEL_ITEMS_PADDING_992_DESC">
+				</field>
+
+				<field type="spacer" label="MOD_OWL_CAROUSEL_SPACER_RESPONSIVE_768_LABEL" ></field>
+
+				<field
+					name="scene_padding_768"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_SCENE_PADDING_768_LABEL"
+					description="MOD_OWL_CAROUSEL_SCENE_PADDING_768_DESC">
+				</field>
+
+				<field
+					name="items_padding_768"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_ITEMS_PADDING_768_LABEL"
+					description="MOD_OWL_CAROUSEL_ITEMS_PADDING_768_DESC">
+				</field>
+
+				<field type="spacer" label="MOD_OWL_CAROUSEL_SPACER_RESPONSIVE_480_LABEL" ></field>
+
+				<field
+					name="scene_padding_480"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_SCENE_PADDING_480_LABEL"
+					description="MOD_OWL_CAROUSEL_SCENE_PADDING_480_DESC">
+				</field>
+
+				<field
+					name="items_padding_480"
+					type="text"
+					default="50"
+					label="MOD_OWL_CAROUSEL_ITEMS_PADDING_480_LABEL"
+					description="MOD_OWL_CAROUSEL_ITEMS_PADDING_480_DESC">
+				</field>
+
+				<field type="spacer" label="MOD_OWL_CAROUSEL_SPACER_CONTROLS_LABEL" ></field>
+
+				<field
+					name="navigation"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_OWL_CAROUSEL_NAV_LABEL"
+					description="MOD_OWL_CAROUSEL_NAV_DESC">
+					<option value="0">MOD_OWL_CAROUSEL_HIDE</option>
+					<option value="1">MOD_OWL_CAROUSEL_SHOW</option>
+				</field>				
+
+				<field
+					name="pagination"
+					type="radio"
+					default="0"
+					class="btn-group"
+					label="MOD_OWL_CAROUSEL_PAG_LABEL"
+					description="MOD_OWL_CAROUSEL_PAG_DESC">
+					<option value="0">MOD_OWL_CAROUSEL_HIDE</option>
+					<option value="1">MOD_OWL_CAROUSEL_SHOW</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

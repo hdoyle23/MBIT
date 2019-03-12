@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>SW Twitter Display</name>
+	<author>Muhammad Riduan</author>
+	<creationDate>October, 2013</creationDate>
+	<copyright>Copyright - Social Widgets</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@socialwidgets.net</authorEmail>
+	<authorUrl>http://socialwidgets.net/</authorUrl>
+	<version>1.0</version>
+	<description>Thanks for installing SW Twitter Display</description> 
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_sw_twitterdisplay">mod_sw_twitterdisplay.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_sw_twitterdisplay.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+					name="userName"
+					type="text"
+					default="twitter"
+					label="Twitter User Name" 
+					description="Your Twitter Username will be here" />
+				<field
+					name="width"
+					type="text"
+					default="200"
+					label="Width"
+					description="Width of your module" />
+				<field
+					name="height"
+					type="text"
+					default="500"
+					label="Height"
+					description="Height of your module (if field 'Use limits' = 'No')" />
+				<field
+					name="theme"
+					type="list"
+					default="light"
+					label="Theme"
+					description="Choose your theme">
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</field>
+				<field
+					name="linkColor"
+					type="color"
+					default="#eee"
+					label="Link Color"
+					description="Choose link color of your module" />
+				<field
+					name="borderColor"
+					type="color"
+					default="#000"
+					label="Border Color"
+					description="Choose border color of your module" />
+
+				<field
+					name="useLimits"
+					type="radio"
+					class="btn-group"
+					default=""
+					label="Use limits"
+					description="">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+
+				<field 
+					name="limit"
+					type="text"
+					default="5"
+					label="No. of tweets" 
+					description="No. of tweets" />
+				<field
+					name="border"
+					type="radio"
+					class="btn-group"
+					default=""
+					label="Border"
+					description="Show Border - Yes or No">
+					<option value="">Yes</option>
+					<option value="noborders ">No</option>
+				</field>
+				<field
+					name="scrollbar"
+					type="radio"
+					class="btn-group"
+					default=""
+					label="Scrollbar"
+					description="Show Scrollbar - Yes or No">
+					<option value="">Yes</option>
+					<option value="noscrollbar ">No</option>
+				</field>
+				<field
+					name="header"
+					type="radio"
+					class="btn-group"
+					default=""
+					label="Header"
+					description="Header - Yes or No">
+					<option value="">Yes</option>
+					<option value="noheader ">No</option>
+				</field>
+				<field
+					name="footer"
+					type="radio"
+					class="btn-group"
+					default=""
+					label="Footer"
+					description="Footer - Yes or No">
+					<option value="">Yes</option>
+					<option value="nofooter ">No</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+					
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="Module Suffix"
+					description="Module Suffix" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

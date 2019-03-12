@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE kinstall>
+<kinstall type="kunena-template" version="4.0" method="upgrade">
+	<name>TM Custom</name>
+	<version>1.0.0</version>
+	<creationDate>2017-03-31</creationDate>
+	<author>TemplateMonster</author>
+	<authorEmail>info@template-help.com</authorEmail>
+	<authorUrl>http://www.templatemonster.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2017 Jetimpex, Inc.</copyright>
+	<license>GNU/GPLv2</license>
+	<description>TM Custom template</description>
+</kinstall>

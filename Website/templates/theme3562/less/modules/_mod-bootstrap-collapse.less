@@ -1,0 +1,182 @@
+// ============================
+// Bootstrap collapse Modules
+// ============================
+.mod-bootstrap-collapse{
+	.panel-group {
+	  margin-bottom: 0;
+	  .panel {
+	    margin-bottom: 0;
+	    background: transparent;
+	    border: none;
+	    position: relative;
+	    .box-shadow(none);
+	    .border-radius(0);
+	    + .panel {
+	       margin-top: 30px;
+	    }
+	  }
+	  .panel-heading {
+	    padding: 0;
+	    .border-radius(0);
+	    position: relative;
+	    background: @global-color;
+	    > .dropdown .dropdown-toggle {
+	       color: inherit;
+	    }
+	    a {
+	        color: @white;
+	        display: block;
+	        font-size: 16px;
+	        line-height: 20px;
+	        padding: 15px 40px 15px 30px;
+	        position: relative;
+	        font-weight: bold;
+	        .panel-heading_icon{
+		        float: right;
+		        font-style: normal;
+		        &:before {
+		           content: '\f105';
+		           font-size: 17px;
+		           line-height: 18px;
+		           font-family: @fa;
+		           color: @white;
+		           right: 20px;
+		           top: 50%;
+		           font-style: normal;
+		           position: absolute;
+		           .translate(0, -50%);
+		        }
+		      }
+
+	      
+	        &.collapsed {
+		        background: #e6e6e6;
+		        color: @gray-dark;
+		        .panel-heading_icon{
+		          &:before {
+		            content: '\f107';
+		            color: @headings-color;
+		          }
+		        }
+		    }
+
+		    &:hover{
+
+		    }
+	    }
+	    &:hover {
+
+	    }
+	    + .panel-collapse > .panel-body,
+	    + .panel-collapse > .list-group {
+
+	    }
+	  }
+	  .panel-body {
+	    .clearfix();
+	    padding: 31px 0 3px 25px;
+	    border: none!important;
+	    > * {
+	       font-family: @font-family-secondary2;
+	       font-weight: 300; 
+	    }
+	  }
+	  .panel-footer {
+	    border: none;
+	    + .panel-collapse .panel-body {
+	       border: none;
+	    }
+	  }
+	}
+}
+
+.mod-bootstrap-collapse__{
+	&custom {  
+	  .panel-group {
+	    margin-bottom: 1px;
+	    .panel {
+	       margin-bottom: 0;
+	       background: transparent;
+	       border: none;
+	       .box-shadow(none);
+	       + .panel {
+	        margin-top: 1px;
+	      }
+	    }
+	    .panel-heading {
+	        padding: 0;
+	        .border-radius(0);
+	        position: relative;
+	        background: transparent;
+	        > .dropdown .dropdown-toggle {
+	          color: inherit;
+	        }
+	        a {
+		        color: @global-color;
+		        display: block;
+		        font-size: 16px;
+		        line-height: 20px;
+		        padding: 15px 30px 15px 30px;
+		        border: none;
+	            border-bottom: 1px solid #e6e6e6;
+		        position: relative;
+		        background: transparent;
+		        .panel-heading_icon{
+		            float: left;
+		            &:before {
+			            content: '\e073';
+			            font-size: 15px;
+			            line-height: 18px;
+			            font-family: @material;
+			            color: @global-color;
+			            left: 0;
+			            top: 50%;
+			            position: absolute;
+			            .translate(0, -50%);
+			        }
+		        }
+
+	        
+		        &.collapsed {
+		        	border: none;
+		            border-bottom: 1px solid #e6e6e6;
+		            background: transparent;
+		            color: @gray-dark;
+		            .panel-heading_icon{
+			            &:before {
+			              content: '\e071';
+			              color: @headings-color;
+			            }
+			        }
+		        }
+
+		        &:hover{
+
+		        }
+		    }
+	      &:hover {
+
+	      }
+	      + .panel-collapse > .panel-body,
+	      + .panel-collapse > .list-group {
+
+	      }
+	    }
+	    .panel-body {
+	        .clearfix();
+	        padding: 30px 0 0 0;
+	        border: none!important;
+	        > * {
+		        font-family: @font-family-secondary2;
+		        font-weight: 300; 
+		    }
+	    }
+	    .panel-footer {
+	        border-top: 0;
+	        + .panel-collapse .panel-body {
+	        	border: none;
+	        }
+	    }
+	  }
+	}
+}

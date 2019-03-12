@@ -1,0 +1,96 @@
+// ============================
+// Countdown Modules
+// ============================
+@item-margin: 30px;  //margin between elements
+
+.mod_tm_countdown{
+
+	&_circular,
+	&_simple{
+		.ClassyCountdown-wrapper{
+			text-align: center;
+			margin: 0 -@item-margin/2;
+			.ClassyCountdown-days,
+			.ClassyCountdown-hours,
+			.ClassyCountdown-minutes,
+			.ClassyCountdown-seconds{
+				display: inline-block;
+			    position: relative;
+			    width: calc(~"25% - "@item-margin);
+			    margin: 0 @item-margin/2;
+			    margin-bottom: 20px;
+
+			    .ClassyCountdown-value{
+			    	font-size: 24px !important; //text font-size
+			    	line-height: 30px; //text line-height
+			    	width: 100%;
+				    position: absolute;
+				    top: 50%;
+				    text-align: center;
+				    left: 0;
+				    display: block;
+			    	div{	//value
+			    		font-size: 20px;
+			    		line-height: 24px;
+			    	}
+
+			    	span{	//text
+
+			    	}
+			    }
+
+			    @media(max-width: 767px){
+		    		width: calc(~"100% - "@item-margin);
+		    		max-width: 400px;
+		    		margin: 0 auto;
+		    		margin-bottom: 30px;
+		    		padding-left: 15%;
+		    		padding-right: 15%;
+		    	}
+
+		    	@media(max-width: 479px){
+		    		padding-left: 5%;
+		    		padding-right: 5%;
+		    		max-width: 250px;
+		    	}
+			}
+		}
+	}
+	
+	&_simple{
+		.ClassyCountdown-wrapper{
+
+			> div{
+				max-height: 40px !important;
+			}
+
+
+			.ClassyCountdown-days,
+			.ClassyCountdown-hours,
+			.ClassyCountdown-minutes,
+			.ClassyCountdown-seconds{
+
+			    > div{
+			    	visibility: hidden;  //hide circle progress
+			    }
+
+			    .ClassyCountdown-value{
+			    	font-size: 24px !important; //text font-size
+			    	line-height: 30px; //text line-height
+			    	div{	//value
+			    		font-size: 20px;
+			    		line-height: 24px;
+			    	}
+
+			    	span{	//text
+
+			    	}
+			    }
+			}
+		}
+	}
+}
+
+.mod_tm_countdown__{
+	
+}

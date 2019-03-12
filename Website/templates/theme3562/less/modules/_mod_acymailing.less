@@ -1,0 +1,73 @@
+// ============================
+// Acymailing Modules
+// ============================
+
+
+//tableless display mode
+
+.acymailing_module{
+
+	.acymailing_module_error{
+	    & + form{
+	    	display: block !important;
+	    }
+	}
+
+	.acymailing_module_success {
+	    font-weight: bold;
+
+	    &:before {
+		    content: '\f058';
+		    display: inline-block;
+		    font-family: FontAwesome;
+		    font-size: 22px;
+		    padding-right: 10px;
+		    vertical-align: middle;
+	    }
+
+	    & + form {
+	    	display: none;
+	    }
+	}
+
+	.acymailing_fulldiv{
+
+		form{
+
+			.acymailing_module_form{
+
+				.acymailing_form{
+
+					.onefield{
+						position: relative;
+
+						.acyfield_name{
+
+						}
+
+						.acyfield_email{
+
+						}
+
+
+						input.inputbox{
+							width: 100%;
+						}
+					}
+
+					.acysubbuttons{
+
+						.btn{
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.acymailing_module{
+	
+}
